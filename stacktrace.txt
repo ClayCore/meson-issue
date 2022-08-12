@@ -1,21 +1,17 @@
-Claymore@HOSTNAME S:\wplace\c\motd
-> meson build
+Claymore@Claymore-PC MINGW64 /s/wplace/temp/meson-issue (master)
+$ meson build
 The Meson build system
 Version: 0.63.0
-Source dir: S:\wplace\c\motd
-Build dir: S:\wplace\c\motd\build
+Source dir: S:\wplace\temp\meson-issue
+Build dir: S:\wplace\temp\meson-issue\build
 Build type: native build
-Project name: motd
+Project name: example
 Project version: 0.1.0
 C compiler for the host machine: ccache cc (gcc 12.1.0 "cc (Rev3, Built by MSYS2 project) 12.1.0")
 C linker for the host machine: cc ld.bfd 2.38
 Host machine cpu family: x86_64
 Host machine cpu: x86_64
-Program doxygen found: NO
-meson.build:54: WARNING: Documentation generation disabled
-Program clang-tidy found: YES (E:\Program Files\LLVM\bin\clang-tidy.EXE)
-Message: clang-tidy found
-Build targets in project: 2
+Build targets in project: 1
 
 Found ninja-1.10.2.git.kitware.jobserver-1 at S:\wplace\sdk\Python\Python310\Scripts\ninja.EXE
 Traceback (most recent call last):
