@@ -1,0 +1,54 @@
+Claymore@HOSTNAME S:\wplace\c\motd
+> meson build
+The Meson build system
+Version: 0.63.0
+Source dir: S:\wplace\c\motd
+Build dir: S:\wplace\c\motd\build
+Build type: native build
+Project name: motd
+Project version: 0.1.0
+C compiler for the host machine: ccache cc (gcc 12.1.0 "cc (Rev3, Built by MSYS2 project) 12.1.0")
+C linker for the host machine: cc ld.bfd 2.38
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program doxygen found: NO
+meson.build:54: WARNING: Documentation generation disabled
+Program clang-tidy found: YES (E:\Program Files\LLVM\bin\clang-tidy.EXE)
+Message: clang-tidy found
+Build targets in project: 2
+
+Found ninja-1.10.2.git.kitware.jobserver-1 at S:\wplace\sdk\Python\Python310\Scripts\ninja.EXE
+Traceback (most recent call last):
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\mesonmain.py", line 151, in run
+    return options.run_func(options)
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\msetup.py", line 303, in run
+    app.generate()
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\msetup.py", line 186, in generate
+    self._generate(env)
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\msetup.py", line 248, in _generate
+    intr.backend.generate()
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\backend\ninjabackend.py", line 561, in generate
+    self.generate_target(t)
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\backend\ninjabackend.py", line 918, in generate_target
+    elem = self.generate_link(target, outname, final_obj_list, linker, pch_objects, stdlib_args=stdlib_args)
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\backend\ninjabackend.py", line 3126, in generate_link
+    dep_targets.extend(self.guess_external_link_dependencies(linker, target, commands, internal))
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\backend\ninjabackend.py", line 2966, in guess_external_link_dependencies
+    search_dirs = tuple(search_dirs) + tuple(linker.get_library_dirs(self.environment))
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\compilers\mixins\clike.py", line 254, in get_library_dirs
+    return self._get_library_dirs(env, elf_class).copy()
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\compilers\mixins\clike.py", line 213, in _get_library_dirs
+    dirs = self.get_compiler_dirs(env, 'libraries')
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\compilers\mixins\gnu.py", line 278, in get_compiler_dirs
+    return self._split_fetch_real_dirs(line.split('=', 1)[1])
+  File "S:\wplace\sdk\Python\Python310\Lib\site-packages\mesonbuild\compilers\mixins\gnu.py", line 260, in _split_fetch_real_dirs
+    if pobj.exists():
+  File "S:\wplace\sdk\Python\Python310\lib\pathlib.py", line 1290, in exists
+    self.stat()
+  File "S:\wplace\sdk\Python\Python310\lib\pathlib.py", line 1097, in stat
+    return self._accessor.stat(self, follow_symlinks=follow_symlinks)
+OSError: [WinError 1] Niepoprawna funkcja: 'D:\\a\\msys64\\mingw64\\lib\\x86_64-w64-mingw32\\12.1.0'
+
+ERROR: Unhandled python exception
+
+    This is a Meson bug and should be reported!
